@@ -1,0 +1,1 @@
+INSERT INTO `hello_sql`.`users` (`user_id`, `name`, `username`, `age`, `ini_date`, `email`) VALUES ('1', 'Augusto', 'Moratti', '20', '2023-05-25', 'augus@gmail.com');
