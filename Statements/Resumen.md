@@ -75,4 +75,32 @@ SELECT * FROM users LIMIT 4;
 
 Selecciona los primeros 4 datos de la tabla.
 
-SELECT * FROM users WHERE NOT email = 'sara@gmail.com' OR age = 20 LIMIT 1;
+SELECT * FROM users WHERE NOT email = 'sara@gmail.com' OR age = 20 LIMIT 1;______________________________________________________________________
+
+NULL)
+-----------------------
+SELECT * FROM users WHERE email IS NOT NULL;
+
+Selecciona los que tengan el campo email no nulo.
+
+SELECT * FROM users WHERE email IS NULL;
+
+Selecciona los que tengan el campo email nulo.
+______________________________________________________________________
+
+MIN-MAX)
+-----------------------
+SELECT MAX(age) FROM users ;
+
+nos muestra el campo maximo, nos muestra solo ese campo tener en cuenta.
+
+SELECT MIN(age) FROM users ;
+
+nos muestra el campo MINIMO, nos muestra solo ese campo tener en cuenta.
+______________________________________________________________________
+
+COUNT)
+-----------------------
+SELECT COUNT(age) FROM users ;
+
+Devuelve la cantidad de filas que no tienen nulo el campo, en este caso es el campo age.
