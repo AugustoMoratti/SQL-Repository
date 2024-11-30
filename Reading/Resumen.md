@@ -104,3 +104,15 @@ COUNT)
 SELECT COUNT(age) FROM users ;
 
 Devuelve la cantidad de filas que no tienen nulo el campo, en este caso es el campo age.
+______________________________________________________________________
+
+RELACIONES)
+-----------------------
+
+- 1 a 1 = Cada elemento de la tabla A solo puede estar relacionado con un elemento de la tabla B , y alreves.
+
+- 1 a N(varios) = Un elemento de A puede tener mas de un elemento de B. En cambio cada elemento de B pertenece a un unico elemento de A.
+
+- N a N = Un elemento de A puede tener varios elementos de B y un elemento de B puede tener varios elementos de A. (se suele usar una tabla intermedia donde se guardan las relaciones)
+
+- Autoreferencia = Relacion dentro de la misma tabla. 
