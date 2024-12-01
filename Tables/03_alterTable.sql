@@ -17,3 +17,15 @@ MODIFY COLUMN description varchar(100);
 /*Eliminar una columna*/
 ALTER TABLE persons3
 DROP COLUMN description;
+
+/*Agregar propiedades*/
+ALTER TABLE users 
+ADD CONSTRAINT fk_companies
+FOREIGN KEY(company_id) REFERENCES companies(company_id);
+
+/*Aveces , si tenes una FK debemos eliminarla y luego colocarla de vuelta para poder añadir propiedades
+como el not nul de abajo*/
+ALTER TABLE `hello_sql`.`users_languages` 
+CHANGE COLUMN `user_id` `user_id` INT NOT NULL ,
+CHANGE COLUMN `language_id` `language_id` INT NOT NULL ;
+
