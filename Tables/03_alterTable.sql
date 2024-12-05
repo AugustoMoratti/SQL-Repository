@@ -4,6 +4,11 @@
 ALTER TABLE persons3
 ADD surname varchar(150);
 
+/*Añadir una columna que tenga un valor por defecto*/
+ALTER TABLE movies
+ADD Language varchar(100) 
+    DEFAULT 'English';
+
 /*Actualizar, renombrar*/
 ALTER TABLE persons3
 RENAME COLUMN surname TO description;
@@ -24,7 +29,7 @@ ADD CONSTRAINT fk_companies
 FOREIGN KEY(company_id) REFERENCES companies(company_id);
 
 /*Aveces , si tenes una FK debemos eliminarla y luego colocarla de vuelta para poder añadir propiedades
-como el not nul de abajo*/
+como el not nul de abajo y luego volver a agregar la*/
 ALTER TABLE `hello_sql`.`users_languages` 
 CHANGE COLUMN `user_id` `user_id` INT NOT NULL ,
 CHANGE COLUMN `language_id` `language_id` INT NOT NULL ;
