@@ -27,8 +27,10 @@ def print_user(user):
 
 print_user("unNombre")
 
+
 #print_user("'; UPDATE users SET age = 15 WHERE user_id = 1; --")
 
 # injection sql en python tambien, buscar en google. Es para la seguridad de nuestra DB.
+
 
 

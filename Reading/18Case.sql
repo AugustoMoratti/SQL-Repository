@@ -1,3 +1,4 @@
+SELECT *,
 CASE
 	WHEN age > 17 THEN 'Es mayor de edad'
     WHEN age < 18 THEN 'No es mayor de edad'
