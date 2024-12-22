@@ -25,7 +25,7 @@ def print_user(user):
     cursor.close()
     connection.close()
 
-print_user("unNombre")
+print_user("unNombree")
 
 
 #print_user("'; UPDATE users SET age = 15 WHERE user_id = 1; --")
